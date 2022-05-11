@@ -1,0 +1,11 @@
+<div *ngFor="let vagas of vagas$ | async" class="card">
+    <div class="card-vagas">
+        <div class="card-body">
+          <h5 class="card-text">{{ vagas.titulo }}</h5>
+          <p class="card-text">O que a empresa está a procura : </p>
+          <p class="card-text">{{ vagas.descricao }}</p>
+          <p class="card-text">Proposta de salario: R$: {{ vagas.salario }}</p>
+          <p class="card-text">Empresa requisitada {{ vagas.id_empresa }}</p>
+        </div>
+    </div>
+</div>
