@@ -1,5 +1,5 @@
 export interface Vagas {
-  id:number,
+  id_vaga:number,
   id_empresa:number
   titulo:string,
   salario:number,
