@@ -1,15 +1,17 @@
+import { EmpresaProfileComponent } from './empresa-profile/empresa-profile.component';
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { EmpresasRegisterComponent } from "./empresas-register/empresas-register-component";
 import { EmpresasRoutingModule } from "./empresas-routing-module";
-import { EmpresasComponent } from "./empresas.component";
+
 
 
 @NgModule({
   declarations: [
-    EmpresasComponent,
-    EmpresasRegisterComponent
+    EmpresasRegisterComponent,
+    EmpresaProfileComponent,
+
   ],
   imports: [
     CommonModule,
@@ -18,7 +20,6 @@ import { EmpresasComponent } from "./empresas.component";
     ReactiveFormsModule,
   ],
   exports:[
-    EmpresasComponent,
     EmpresasRegisterComponent
   ]
 })
