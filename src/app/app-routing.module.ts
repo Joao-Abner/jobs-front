@@ -8,8 +8,6 @@ const routes: Routes = [
     {path:'vagas',component:VagasComponent},
     {path:'empresa',component:EmpresaLayoutComponent},
     {path:'empresas',},
-  //   loadChildren: () => import('./empresas/empresa-layout/empresa-layout.component').then(m => m.EmpresaLayoutComponent)
-  // }
 ];
 
 @NgModule({
