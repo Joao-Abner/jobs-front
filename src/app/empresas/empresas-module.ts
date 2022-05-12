@@ -1,3 +1,5 @@
+import { EmpresaLayoutComponent } from './empresa-layout/empresa-layout.component';
+import { EmpresaVagasComponent } from './empresa-vagas/empresa-vagas.component';
 import { EmpresaProfileComponent } from './empresa-profile/empresa-profile.component';
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
@@ -11,7 +13,8 @@ import { EmpresasRoutingModule } from "./empresas-routing-module";
   declarations: [
     EmpresasRegisterComponent,
     EmpresaProfileComponent,
-
+    EmpresaVagasComponent,
+    EmpresaLayoutComponent
   ],
   imports: [
     CommonModule,
@@ -20,7 +23,8 @@ import { EmpresasRoutingModule } from "./empresas-routing-module";
     ReactiveFormsModule,
   ],
   exports:[
-    EmpresasRegisterComponent
+    EmpresasRegisterComponent,
+    EmpresaLayoutComponent
   ]
 })
 
