@@ -1,16 +1,20 @@
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
+
+
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { CommonModule } from '@angular/common';
+import { MaterialModule } from './shared/material.module';
+import { EmpresasModule } from './empresas/empresas-module';
 
-// Angular Material
-import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatIconModule } from '@angular/material/icon';
-import {MatButtonModule} from '@angular/material/button';
 
 import { AppComponent } from './app.component';
 import { VagasComponent } from './vagas/all-vagas/vagas.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -19,12 +23,15 @@ import { VagasComponent } from './vagas/all-vagas/vagas.component';
   ],
   imports: [
     BrowserModule,
+    EmpresasModule,
     HttpClientModule,
+    MaterialModule,
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatToolbarModule,
-    MatIconModule,
-    MatButtonModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

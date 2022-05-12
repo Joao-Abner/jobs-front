@@ -7,7 +7,9 @@ import { VagasComponent } from './vagas/all-vagas/vagas.component';
 const routes: Routes = [
     {path:'vagas',component:VagasComponent},
     {path:'empresa',component:EmpresaLayoutComponent},
-    {path:'empresas',},
+    {path:'empresas',
+    loadChildren: () => import('./empresas/empresas-module').then(m => m.EmpresasModule)
+  }
 ];
 
 @NgModule({
