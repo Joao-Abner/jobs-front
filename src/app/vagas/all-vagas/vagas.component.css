@@ -1,0 +1,13 @@
+.card{
+  display: inline-flex;
+
+  margin: 0.20rem;
+}
+.card-vagas{
+  height: 15rem;
+  width: 18rem;
+  text-align: start;
+}
+.butao{
+  display: block
+}
